@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2nd Workshop on Multi-Modal Spatial AI for Open-World Understanding, Reasoning, and Action at ICRA 2027.">
+  <meta name="keywords" content="Spatial AI, Multi-Modal Sensing, SLAM, State Estimation, Scene Understanding, Spatial Reasoning, ICRA 2027">
+  <title>MM-SpatialAI Workshop @ ICRA 2027</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/favicon.svg">
+</head>
+<body>
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item brand" href="#home">MM-SpatialAI <span>2027</span></a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarMain" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="#overview">Overview</a>
+      <a class="navbar-item" href="#speakers">Speakers</a>
+      <a class="navbar-item" href="#schedule">Program</a>
+      <a class="navbar-item" href="#cfp">Call for Papers</a>
+      <a class="navbar-item" href="#challenge">Challenge</a>
+      <a class="navbar-item" href="#organizers">Organizers</a>
+      <a class="navbar-item" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <p class="edition" id="edition"></p>
+      <h1 class="title is-1 publication-title" id="workshop-title"></h1>
+      <p class="subtitle is-4 conf-line" id="conf-line"></p>
+      <p class="is-size-5 meta-line" id="meta-line"></p>
+      <div id="announcement"></div>
+      <div class="publication-links" id="hero-buttons"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="section" id="overview">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Overview</h2>
+    <div class="content has-text-justified" id="overview-text"></div>
+
+    <h3 class="title is-4 has-text-centered mt-6">Robotics Settings</h3>
+    <div class="columns is-multiline" id="cases"></div>
+
+    <h3 class="title is-4 has-text-centered mt-5">Guiding Questions</h3>
+    <div class="columns is-multiline" id="questions"></div>
+  </div>
+</section>
+
+<!-- Speakers -->
+<section class="section alt" id="speakers">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Invited Speakers</h2>
+    <div class="columns is-multiline is-centered is-mobile" id="speaker-list"></div>
+  </div>
+</section>
+
+<!-- Schedule -->
+<section class="section" id="schedule">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Program</h2>
+    <p class="has-text-centered has-text-grey mb-4" id="schedule-note"></p>
+    <div class="table-container">
+      <table class="table is-fullwidth schedule-table">
+        <tbody id="schedule-body"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Call for papers -->
+<section class="section alt" id="cfp">
+  <div class="container is-max-desktop">
+    <div class="cfp-card box">
+      <h2 class="title is-3 has-text-centered">Call for Papers</h2>
+      <div class="content has-text-justified">
+        <p id="cfp-intro"></p>
+        <div class="cfp-submission" id="cfp-formats"></div>
+
+        <h3 class="title is-5 accent mt-5">Topics of Interest</h3>
+        <ul class="cfp-topics" id="cfp-topics"></ul>
+
+        <h3 class="title is-5 accent mt-5">Submission</h3>
+        <p id="cfp-submission-link"></p>
+
+        <h3 class="title is-5 accent mt-5">Award</h3>
+        <p id="cfp-award"></p>
+      </div>
+    </div>
+
+    <h3 class="title is-4 has-text-centered mt-6">Important Dates</h3>
+    <div class="dates-wrap">
+      <table class="table is-fullwidth dates-table"><tbody id="dates-body"></tbody></table>
+    </div>
+  </div>
+</section>
+
+<!-- Hilti Challenge -->
+<section class="section" id="challenge">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Hilti Challenge</h2>
+    <div class="content has-text-justified" id="challenge-text"></div>
+  </div>
+</section>
+
+<!-- Organizers -->
+<section class="section alt" id="organizers">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Organizers</h2>
+    <div class="columns is-multiline is-centered is-mobile" id="organizer-list"></div>
+  </div>
+</section>
+
+<!-- Sponsors (hidden when the list in config.js is empty) -->
+<section class="section" id="sponsors">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Sponsors</h2>
+    <div class="columns is-multiline is-centered is-vcentered" id="sponsor-list"></div>
+  </div>
+</section>
+
+<!-- Previous editions & contact -->
+<section class="section" id="contact">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Previous Editions</h2>
+    <div class="content" id="previous-editions"></div>
+
+    <h2 class="title is-3 mt-6">Contact</h2>
+    <div class="content" id="contact-text"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered is-size-7">
+    <p>Website layout adapted from the
+      <a href="https://xingxingzuo.github.io/MM-SpatialAI/" target="_blank" rel="noopener">MM-SpatialAI 2026</a> and
+      <a href="https://jonasfrey96.github.io/data_in_field_robotics/" target="_blank" rel="noopener">Data in Field Robotics</a> workshop pages.</p>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

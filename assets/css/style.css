@@ -1,0 +1,86 @@
+:root {
+  --accent: #2b59c3;
+  --accent-soft: #eef3ff;
+  --ink: #1f2933;
+  --muted: #5f6b7a;
+  --alt-bg: #f7f9fc;
+  --line: #e3e8ef;
+}
+
+html { scroll-padding-top: 4rem; scroll-behavior: smooth; }
+body { font-family: 'Noto Sans', sans-serif; color: var(--ink); background: #fff; }
+.title, .navbar, .button { font-family: 'Google Sans', 'Noto Sans', sans-serif; }
+a { color: var(--accent); }
+.section.alt { background: var(--alt-bg); }
+.accent { color: var(--accent) !important; }
+
+/* Navbar */
+.navbar { box-shadow: 0 1px 0 var(--line); }
+.navbar-item.brand { font-weight: 700; color: var(--ink); }
+.navbar-item.brand span { color: var(--accent); margin-left: .3em; }
+.navbar-item:hover { color: var(--accent) !important; }
+body { padding-top: 3.25rem; }
+
+/* Hero */
+.hero { background: linear-gradient(160deg, #f9fbff 0%, #e9f0ff 100%); }
+.hero-body { padding: 4rem 1.5rem 3rem; }
+.edition { text-transform: uppercase; letter-spacing: .12em; font-size: .85rem; font-weight: 600; color: var(--accent); margin-bottom: .75rem; }
+.publication-title { line-height: 1.2; }
+.conf-line { margin-top: 1rem !important; color: var(--ink); font-weight: 500; }
+.meta-line { color: var(--muted); }
+.announcement { max-width: 640px; margin: 1.5rem auto 0; }
+.publication-links { margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
+
+/* Cases and questions */
+.case-card { height: 100%; border-top: 4px solid var(--accent); }
+.case-head { font-size: 1.4rem; color: var(--accent); display: flex; align-items: center; justify-content: space-between; }
+.case-title { font-weight: 700; margin: .5rem 0; }
+.case-text { color: var(--muted); font-size: .95rem; }
+.question { display: flex; gap: .9rem; align-items: flex-start; height: 100%; padding: 1rem; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.q-id { flex: 0 0 auto; background: var(--accent); color: #fff; font-weight: 700; border-radius: 8px; padding: .2rem .5rem; }
+.q-title { font-weight: 700; }
+
+/* People */
+.person { text-align: center; padding: .5rem; }
+.avatar { position: relative; width: 9rem; height: 9rem; margin: 0 auto .75rem; border-radius: 30%; overflow: hidden; background: var(--accent-soft); }
+.avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.avatar-initials { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; font-weight: 700; color: var(--accent); }
+.person-name { font-weight: 700; }
+.person-meta { color: var(--muted); font-size: .9rem; }
+@media (max-width: 768px) { .avatar { width: 7rem; height: 7rem; } }
+
+/* Schedule */
+.schedule-table td { vertical-align: middle; border-color: var(--line); }
+.schedule-table td.time { white-space: nowrap; font-weight: 600; width: 9.5rem; }
+.row-icon { color: var(--accent); width: 1.4rem; margin-right: .4rem; }
+.row-note { display: block; color: var(--muted); font-size: .88rem; margin-left: 1.8rem; }
+.row-break td, .row-award td { background: #fffaeb; }
+.row-challenge td { background: var(--accent-soft); }
+tr.toggle { cursor: pointer; }
+tr.toggle:hover td { background: var(--alt-bg); }
+.toggle-hint { float: right; color: var(--muted); transition: transform .2s; }
+tr.toggle.open .toggle-hint { transform: rotate(180deg); }
+.talk-details td { background: var(--alt-bg); font-size: .95rem; }
+.talk-title { font-weight: 700; color: var(--accent); margin-bottom: .5rem; }
+
+/* Call for papers */
+.cfp-card { border-radius: 16px; padding: 2rem; background: linear-gradient(135deg, #fff, var(--accent-soft)); box-shadow: 0 6px 20px rgba(0,0,0,.07); }
+.cfp-submission { margin-top: 1rem; padding: .75rem 1rem; border-left: 4px solid var(--accent); background: #fff; border-radius: 8px; }
+.cfp-submission ul { margin-top: .3rem; }
+.content ul.cfp-topics { columns: 2; column-gap: 2rem; list-style: none; margin-left: 0; }
+.cfp-topics li { position: relative; padding-left: 1.2em; break-inside: avoid; }
+.cfp-topics li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+@media (max-width: 768px) { .content ul.cfp-topics { columns: 1; } .cfp-card { padding: 1.25rem; } }
+.dates-wrap { max-width: 560px; margin: 0 auto; }
+.dates-table { background: transparent; }
+.dates-table th { font-weight: 600; }
+.dates-table td { text-align: right; color: var(--muted); }
+
+.sponsor-logo { max-height: 80px; }
+.footer { padding: 2rem 1.5rem; background: var(--alt-bg); }
+.conf-logo { max-height: 110px; margin-bottom: 1rem; }
+@media (max-width: 768px) {
+  .publication-title { font-size: 2rem !important; }
+  .has-text-justified { text-align: left !important; }
+  .hero-body { padding: 2.5rem 1rem 2rem; }
+}
