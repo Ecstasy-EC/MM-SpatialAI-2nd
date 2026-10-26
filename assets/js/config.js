@@ -72,12 +72,12 @@ const speakers = {
 
 // [name, photo, position, affiliation, homepage]
 const organizers = [
-  ['Yixi Cai', 'assets/images/organizers/cai.jpg', 'Postdoctoral Researcher', 'KTH Royal Institute of Technology, Sweden', ''],
-  ['Yifu Tao', 'assets/images/organizers/tao.jpg', 'Assistant Professor', 'The Hong Kong Polytechnic University', ''],
+  ['Yixi Cai', 'assets/images/organizers/cai.jpg', 'Postdoctoral Researcher', 'KTH Royal Institute of Technology, Sweden', 'https://yixicai.com/'],
+  ['Yifu Tao', 'assets/images/organizers/tao.jpg', 'Assistant Professor', 'The Hong Kong Polytechnic University', 'https://yifutao.github.io/'],
   ['Xingxing Zuo', 'assets/images/organizers/zuo.jpg', 'Assistant Professor', 'MBZUAI, UAE', 'https://xingxingzuo.github.io/'],
-  ['Marija Popović', 'assets/images/organizers/popovic.jpg', 'Assistant Professor', 'TU Delft, the Netherlands', ''],
+  ['Marija Popović', 'assets/images/organizers/popovic.jpg', 'Assistant Professor', 'TU Delft, the Netherlands', 'https://www.tudelft.nl/en/staff/m.popovic/'],
   ['Lukas Rosenberger Schmid', 'assets/images/organizers/schmid.jpg', 'Professor', 'University of Technology Nuremberg, Germany', 'https://schmluk.github.io/'],
-  ['Teresa Vidal-Calleja', 'assets/images/organizers/vidal-calleja.jpg', 'Professor', 'University of Technology Sydney, Australia', ''],
+  ['Teresa Vidal-Calleja', 'assets/images/organizers/vidal-calleja.jpg', 'Professor', 'University of Technology Sydney, Australia', 'https://profiles.uts.edu.au/Teresa.VidalCalleja'],
 ]
 
 // Schedule rows: [type, time, title, extra]
