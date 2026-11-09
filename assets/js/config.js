@@ -44,7 +44,7 @@ const overview = [
 // [id, title, description, Font Awesome icon]
 const cases = [
   ['C1', 'Construction & built environments', 'Multi-sensor mapping and as-built understanding on real construction sites, benchmarked through the Hilti Challenge.', 'fa-helmet-safety'],
-  ['C2', 'Field & legged robots in degraded conditions', 'Darkness, dust, smoke, and aggressive motion, where single modalities fail and fusion must carry understanding.', 'fa-person-hiking'],
+  ['C2', 'Aerial & field robots in large-scale outdoor environments', 'Aerial and ground robots mapping and understanding farms, forests, and open terrain, at scales and in conditions where no single modality is enough.', 'fa-mountain-sun'],
   ['C3', 'Open-world mobile manipulation & object search', 'Finding and acting on objects in changing, human-shared environments using open-vocabulary 3D/4D maps.', 'fa-robot'],
 ]
 
@@ -58,7 +58,7 @@ const questions = [
 
 // key: [name, photo, position, affiliation, homepage, talk title, abstract, bio, remote?]
 const speakers = {
-  zhang: ['Fu Zhang', 'assets/images/speakers/zhang.jpg', 'Associate Professor', 'The University of Hong Kong',
+  zhang: ['Fu Zhang', 'assets/images/speakers/zhang.jpg', 'Associate Professor', 'The University of Hong Kong, Hong Kong SAR, China',
     'https://mars.hku.hk/', '', '', '', false],
   huang: ['Guoquan (Paul) Huang', 'assets/images/speakers/huang.jpg', 'Professor', 'University of Delaware, USA',
     'https://udel.edu/~ghuang/', '', '', '', false],
@@ -73,7 +73,7 @@ const speakers = {
 // [name, photo, position, affiliation, homepage]
 const organizers = [
   ['Yixi Cai', 'assets/images/organizers/cai.jpg', 'Postdoctoral Researcher', 'KTH Royal Institute of Technology, Sweden', 'https://yixicai.com/'],
-  ['Yifu Tao', 'assets/images/organizers/tao.jpg', 'Assistant Professor', 'The Hong Kong Polytechnic University', 'https://yifutao.github.io/'],
+  ['Yifu Tao', 'assets/images/organizers/tao.jpg', 'Assistant Professor', 'The Hong Kong Polytechnic University, Hong Kong SAR, China', 'https://yifutao.github.io/'],
   ['Xingxing Zuo', 'assets/images/organizers/zuo.jpg', 'Assistant Professor', 'MBZUAI, UAE', 'https://xingxingzuo.github.io/'],
   ['Marija Popović', 'assets/images/organizers/popovic.jpg', 'Assistant Professor', 'TU Delft, the Netherlands', 'https://www.tudelft.nl/en/staff/m.popovic/'],
   ['Lukas Rosenberger Schmid', 'assets/images/organizers/schmid.jpg', 'Professor', 'University of Technology Nuremberg, Germany', 'https://schmluk.github.io/'],
@@ -114,7 +114,7 @@ const call_for_papers = {
     'Scene graphs and spatial reasoning',
     'Foundation models for spatial AI',
     'Learned vs. model-based estimation',
-    'Robust perception in degraded conditions',
+    'Large-scale outdoor and aerial perception',
     'Mobile manipulation and object search',
     'Task-level evaluation and benchmarks',
     'Datasets and field deployments',
